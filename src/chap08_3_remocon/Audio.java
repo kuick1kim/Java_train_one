@@ -1,4 +1,4 @@
-package chap08_3;
+package chap08_3_remocon;
 
 public class Audio implements RemoteControl{
 	
@@ -27,9 +27,9 @@ public class Audio implements RemoteControl{
 	public void setMute(boolean mute) {		
 		this.mute = mute;
 		if (mute) {
-			System.out.println("음량 무음");
+			System.out.println("오디오 음량 무음");
 		} else {
-			System.out.println("무음 해제");
+			System.out.println("오디오 무음 해제");
 		}
 
 	}

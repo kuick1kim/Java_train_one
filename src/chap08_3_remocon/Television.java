@@ -1,4 +1,4 @@
-package chap08_3;
+package chap08_3_remocon;
 
 public class Television implements RemoteControl{
 
@@ -21,10 +21,7 @@ public class Television implements RemoteControl{
 		System.out.println("현재 TV볼륨" + this.volume);
 		
 	}
-	public void search(String url) {
-		System.out.println(url +"검색합니다.  ");
-		
-	}
+	
 	
 
 }
