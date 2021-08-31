@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>유효성 검사</title>
+	<script type="text/javascript">
+		function fn_validate() {
+			var frmLogin = document.frmLogin;
+			var user_id  = frmLogin.user_id.value;
+			var user_pw = frmLogin.user_pw.value;
+			
+			if((user_id.length ==0 || user_id == "")){
+				
+				alert("아이디를 입력하지 않으면 안되는것을 아는가? ")
+			}else if(user_pw.length ==0 || user_pw == ""){
+				alert(" 비밀번호는 입력하지 않으면 안되는것을 아는가? ")
+				
+			} else {
+				frmLogin.method = "post";
+				frmLogin.action = "login5";
+				frmLogin.submit();
+			}
+		}
+	</script>
+</head>
+<body>
+	<form name="frmLogin" method="post" action="login" enctype="UTF-8">
+	아이디   : <input type="text" name="user_id"> <br>
+	비밀번호  : <input type="password" name="user_pw"> <br>
+	<input type="button" onclick="fn_validate()" value="로그인">
+	<input type="reset" value="다시입력">
+	<input type="hidden" name="user_address" value="서울시 김민상 주소" />
+	
+	
+	
+	
+	
+	
+	</form>
+	
+</body>
+</html>
